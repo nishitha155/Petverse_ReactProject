@@ -1,14 +1,15 @@
-import React,{useState,useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import ProductsCard from './ProductsCard';
-import Header from './Header';
+
 import Reviews from './reviews';
 import { useParams } from 'react-router-dom';
 import Slider from "react-slick"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 import Star from "./star";
+import Footer from '../componants/mainpage/Footer';
 const ProductsSingle = () => {
-  const { userid,producttitle } = useParams();
+  const { userid, producttitle } = useParams();
   const [product, setProduct] = useState(null);
 
   useEffect(() => {
@@ -30,81 +31,82 @@ const ProductsSingle = () => {
     fetchProductDetails();
   }, [producttitle]);
 
-  
+
 
   if (!product) {
     return <div>Loading...</div>;
   }
-  const settings={
-    dots:true,
-    infinite:true,
-    speed:500,
-    slidesToShow:4,
-    slidesToScroll:4
-}
-const data = [
-  {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 4
+  }
+  const data = [
+    {
       name: 'nishitha',
       review: 'good'
-  },
-  {
+    },
+    {
       name: 'Sathwik',
       review: 'good'
-  },
-  {
+    },
+    {
       name: 'nishitha',
       review: 'good'
-  },
-  {
+    },
+    {
       name: 'nishitha',
       review: 'good'
-  },
-  {
+    },
+    {
       name: 'nishitha',
       review: 'good'
-  },
-  {
+    },
+    {
       name: 'nishitha',
       review: 'good'
-  },
-  {
+    },
+    {
       name: 'nishitha',
       review: 'good'
-  },
-  {
+    },
+    {
       name: 'nishitha',
       review: 'good'
-  }
-];
+    }
+  ];
 
 
-  return(
+  return (
     <>
-      
+
       <ProductsCard {...product} />;
-      <div className="div1">
-            <div className="div2">
-                <div className="div3">
-                <Slider {...settings} style={{  }}>
-                    {data.map((d, index) => (
-                        <div className="div4" key={index} style={{width:'85%'}}>
-                            <div className="div5">
-                            <div className="avatar">{d.name.charAt(0).toUpperCase()}</div>
-                            </div>
-                            <div className="star">
-                            <Star></Star>
-                            </div>
-                            <div className="div6">
-                          
-                                <p className="p1">{d.name}</p>
-                                <p>{d.review}</p>
-                            </div>
-                        </div>
-                    ))}
-                    </Slider>
+      <div className="reviewdiv1">
+        <div className="reviewdiv2">
+          <div className="reviewdiv3">
+            <Slider {...settings} style={{}}>
+              {data.map((d, index) => (
+                <div className="reviewdiv4" key={index} style={{ width: '85%' }}>
+                  <div className="reviewdiv5">
+                    <div className="reviewavatar">{d.name.charAt(0).toUpperCase()}</div>
+                  </div>
+                  <div className="reviewstar">
+                    <Star></Star>
+                  </div>
+                  <div className="reviewdiv6">
+
+                    <p className="reviewp1">{d.name}</p>
+                    <p>{d.review}</p>
+                  </div>
                 </div>
-            </div>
+              ))}
+            </Slider>
+          </div>
         </div>
+      </div>
+      <Footer />
     </>
   )
 };

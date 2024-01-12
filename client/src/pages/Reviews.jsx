@@ -11,11 +11,11 @@ const Reviews = () => {
 
     const data = [
         {
-            name: 'nishitha',
-            review: 'good'
+            name: 'David Warner',
+            review: 'Good product and my pet loved it'
         },
         {
-            name: 'Sathwik',
+            name: 'srilekha',
             review: 'good'
         },
         {

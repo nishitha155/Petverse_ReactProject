@@ -1,7 +1,7 @@
 import {useState} from 'react';
 import { Button, Card, } from 'react-bootstrap';
 import { Image } from '@chakra-ui/react'
-import Header from './Header';
+import Header from '../componants/Header';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import { faHeart} from '@fortawesome/free-solid-svg-icons';
@@ -38,14 +38,15 @@ const ProductsCard = ({ image, title, description, price }) => {
     return (
         <div>
             <Header />
-            <Card style={{ margin: '2rem', display: 'flex', flexDirection: 'row', flexWrap: 'wrap', border:'0' }}>
+            <Card style={{ margin: '2rem', display: 'flex', flexDirection: 'row', flexWrap: 'wrap', border:'0', width: '100rem',
+    height: '40rem'}}>
             <div style={{border:'0.1px solid black'}}>
-                <Image src={image} alt={title}  boxSize='40vw'/>
+                <Image src={image} alt={title}  boxSize='35vw'/>
                 </div>
-                <Card style={{ margin: '2rem', width: '40vw',border:'0' }}>
+                <div style={{ margin: '2rem', width: '40vw',border:'0' }}>
                     <Card.Title style={{ fontSize: '2vw', marginTop: '3vw', display: 'flex', justifyContent: 'center' }}>{title}</Card.Title>
                     <Card.Title style={{ fontSize: '3vw', marginTop: '1vw', display: 'flex', justifyContent: 'center' }}>Rs.{price}</Card.Title>
-                    <Card style={{ margin: '0.5vw', border:'0' }}>
+                    <div style={{ margin: '0.5vw', border:'0' }}>
                         <Card.Text style={{ fontSize: '1vw', margin: '1vw' }}> {description}</Card.Text>
                         <div style={{    display: 'flex',alignItems: 'center',justifyContent: 'center',margin: '1rem',height: '3rem'}}>
                         <Button style={{    margin: '1rem',height: '3rem',backgroundColor: '#ff0076'}}>
@@ -55,8 +56,8 @@ const ProductsCard = ({ image, title, description, price }) => {
                         <FontAwesomeIcon icon={faShoppingCart} style={{}}/>Add to Cart
                         </Button>
                         </div>
-                    </Card>
-                </Card>
+                    </div>
+                </div>
             </Card>
             <Card.Title style={{ fontSize: '3vw', marginTop: '1vw', display: 'flex', justifyContent: 'center' }}>Reviews</Card.Title>
             <div className='review'>

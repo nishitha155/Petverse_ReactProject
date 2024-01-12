@@ -13,6 +13,7 @@ const AdminLogout = () => {
     <div style={{margin: '16rem 37rem',
     border: '1px solid black',
     padding: '2rem 2rem',
+    borderRadius: '1rem'
     }}>
     <div style={{padding:'1rem'}}>
       Are you sure you want to logout?

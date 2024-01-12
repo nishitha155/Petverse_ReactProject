@@ -5,7 +5,7 @@ import { Link, useParams } from 'react-router-dom';
 import './Productpag.css';
 import Header from '../componants/Header'
 import Heade2r from '../componants/Heade2r'
-
+import Footer from '../componants/mainpage/Footer';
 
 const Below2999 = () => {
     const { userid } = useParams();
@@ -308,6 +308,7 @@ const Below2999 = () => {
                     </div>
                 ))}
             </div>
+            <Footer />
         </div>
     );
 };

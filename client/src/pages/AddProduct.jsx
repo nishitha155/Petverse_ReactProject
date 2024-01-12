@@ -238,7 +238,7 @@ const Addproduct = () => {
             <Col md={6}>
               <Form.Group controlId="formPetDescription" className={descriptionClasses} style={{border:'0px'}}>
                 <Form.Label style={labelStyle}>PRODUCT DESCRIPTION</Form.Label>
-                <Form.Control as="textarea" rows={1} placeholder="Pet Description" value={descriptionValue}
+                <Form.Control as="textarea" rows={1} placeholder="Product Description" value={descriptionValue}
             onChange={descriptionChangeHandler}
             onBlur={descriptionBlurHandler}/>
             {descriptionHasError && <p style={{ color: '#b40e0e',fontSize:'10px'}}>Please enter a description.</p>}
@@ -246,7 +246,7 @@ const Addproduct = () => {
             </Col>
           </Row>
 
-          <Button type="submit" className="mt-4" style={{ backgroundColor: 'green', borderColor: 'green', width: '160px' }}>ADD PET</Button>
+          <Button type="submit" className="mt-4" style={{ backgroundColor: 'green', borderColor: 'green', width: '160px' }}>ADD PRODUCT</Button>
         </Form>
       
     </Container >

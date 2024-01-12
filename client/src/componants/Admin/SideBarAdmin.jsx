@@ -21,7 +21,10 @@ const SidebarAdmin = () => {
           <li><Link to='/admin/products' className="custom-link">View Products</Link></li>
          
           <li><Link to='/admin/orders' className="custom-link">View Orders</Link></li>
-          <li><Link to='/admin/logout' className="custom-link">Logout</Link></li>
+          <li onClick={() => {
+ 
+  window.location.href = '/';
+}}>Logout</li>
         </ul>
       </div>
     );

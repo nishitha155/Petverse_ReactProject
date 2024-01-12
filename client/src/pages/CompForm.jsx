@@ -50,7 +50,7 @@ function ComplaintsForm() {
           <input
           className="compinput"
             id="complaintsEmail"
-            placeholder="Enter your email"
+            placeholder="Enter your complaint"
             value={formData.complaintsEmail}
             onChange={handleInputChange}
             required

@@ -254,10 +254,10 @@ const MainUser = () => {
 
           <Card.Title className='title' style={{fontSize:'3rem'}}>Learn about Breeds</Card.Title>
           <div className='categoryimage'>
-            <Link className='custom-link'>
+            <Link className='custom-link' to={`/dogbreeds/${userid}`}>
               <Image src={maincat} alt="" height='23vw' width='38vw' />
             </Link>
-            <Link className='custom-link'>
+            <Link className='custom-link' to={`/dogbreeds/${userid}`}>
               <Image src={maindog} alt="" height='23vw' width='38vw' />
             </Link>
           </div>

@@ -232,6 +232,7 @@ const LoginSignup = () => {
           <label htmlFor="chk" aria-hidden="true" className='loginlabel'>
             Login
           </label>
+          <div className='total_input'>
           <div className='input_field'>
           <input type="text" name="username" placeholder="Username" required  className='logininput' value={loginuserValue}
            onChange={loginuserChangeHandler}
@@ -251,6 +252,7 @@ const LoginSignup = () => {
 
            </div>
            <button type="submit" className='loginbutton'>Login</button>
+           </div>
         </form>
       </div>
      

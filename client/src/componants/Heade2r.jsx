@@ -25,14 +25,14 @@ const Header = () => {
         <div className="user-actions">
         <div className="user-action-group">
             <button className="user-button">
-              <Link to='/user/products/CAT' style={{ textDecoration: 'none', color: 'white' }}>
+              <Link to='/user/products/undefined/CAT' style={{ textDecoration: 'none', color: 'white' }}>
                 <span className="label" style={{ textDecoration: 'none', color: 'white',padding: '2rem' }}>Cat</span>
               </Link>
             </button>
           </div>
           <div className="user-action-group">
             <button className="user-button">
-              <Link to='/user/products/DOG' style={{ textDecoration: 'none', color: 'white' }}>
+              <Link to='/user/products/undefined/DOG' style={{ textDecoration: 'none', color: 'white' }}>
                 <span className="label" style={{ textDecoration: 'none', color: 'white',padding: '2rem' }}>Dog</span>
               </Link>
             </button>

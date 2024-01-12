@@ -24,3 +24,16 @@
     margin-left: 60vw;
     margin-top: 2vw;
 }
+
+/* Productpage.css */
+.productsfilters {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+  }
+  
+  .productselect {
+    padding: 8px;
+    font-size: 14px;
+  }
+  

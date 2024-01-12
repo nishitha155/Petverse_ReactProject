@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import saloon1 from '../assets/grooming.jpg';
 import SidebarAdmin from '../componants/Admin/SideBarAdmin';
-
+import { Image } from '@chakra-ui/react';
 
 const AdminSalon = () => {
 
@@ -41,9 +41,9 @@ const AdminSalon = () => {
           <>
           <div className="saloon-container1" style={{ display: 'flex' }}>
             <div className="image-container">
-              <img src={saloon1} alt="Your Image" className="img-fluid" style={{ height: 'auto' }} />
+              <Image src={item.image} alt="Your Image" className="img-fluid" style={{ margin:'5rem',height:'13rem' }} boxSize='20rem' />
             </div>
-            <div className="content-container" style={{ marginLeft: '20px', marginTop: '15px' }}>
+            <div className="content-container" style={{ marginLeft: '87px', marginTop: '15px' }}>
               <h2 className="title" style={{ marginLeft: '20px', marginBottom: '20px', labelStyle }}>{item.title}</h2>
               <p className="description" style={{ marginLeft: '25px', labelStyle }}>
                 {item.description}

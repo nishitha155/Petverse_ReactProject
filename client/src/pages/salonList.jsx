@@ -4,6 +4,7 @@ import Heade2r from '../componants/Heade2r'
 import Header from '../componants/Header'
 import { Link } from 'react-router-dom';
 import { useParams } from 'react-router-dom';
+import { Image } from 'react-bootstrap';
 
 const SaloonList = () => {
   const { userid } = useParams();
@@ -52,9 +53,13 @@ const SaloonList = () => {
           <>
           <div className="saloon-container1" style={{ display: 'flex' }}>
             <div className="image-container">
-              <img src={saloon1} alt="Your Image" className="img-fluid" style={{ width: '90%', height: 'auto' }} />
+              <Image src={item.image} alt="Your Image" className="img-fluid" boxSize='1rem' style={{  height: 'auto', width: '118%',
+    
+    marginTop: '8rem',
+    marginLeft: '6rem' }}
+     />
             </div>
-            <div className="content-container" style={{ marginLeft: '20px', marginTop: '15px' }}>
+            <div className="content-container" style={{ marginLeft: '125px', marginTop: '20px' }}>
               <h2 className="title" style={{ marginLeft: '20px', marginBottom: '20px', labelStyle }}>{item.title}</h2>
               <p className="description" style={{ marginLeft: '25px', labelStyle }}>
                 {item.description}

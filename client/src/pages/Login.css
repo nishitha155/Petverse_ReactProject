@@ -16,9 +16,10 @@
     background:transparent;
     border-radius: 10px;
     box-shadow: 5px 20px 50px #000;
-    margin: 0;
+    margin: 150px 0px;
     position: absolute;
     left: 30%;
+
 }
 
 #chk{
@@ -27,7 +28,7 @@
 .signup{
     position: relative;
     width: 100%;
-    height: 100%;
+    height: 111%;
     
    
 }
@@ -87,11 +88,13 @@
     background: #242222;
 
 }
+.total_input{
+    margin: 60px 0px;
+}
 .login{
-    height: 460px;
+    height: 500px;
     background: linear-gradient(#1d636a,#0fc0cd,#2fafc9);
    
-    border-radius: 40% 40% 0% 0%;
     transform:translateY(-180px);
     transition:.8s ease-in-out;
     position: absolute;
@@ -105,7 +108,7 @@
     margin-top: 22px;
 }
 #chk:checked ~ .login{
-    transform: translateY(-500px);
+    transform: translateY(-556px);
 }
 #chk:checked ~ .login label{
     transform: scale(1);
@@ -129,11 +132,10 @@
 
 .login .input_field{
     background-color: transparent;
-    margin: 0px 159px;
+    margin: 2px 221px;
 }
 .login p{
-    margin-left: 346px;
-    margin-top: -4px;
+    
     font-size: 13px;
     left: 20px;
 }

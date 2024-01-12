@@ -66,9 +66,9 @@ Book a Professional Pet groomer That Will Come to your home.
     alignItems: 'center',
     justifyContent:' center'}}>
     <Link to={`/salons/${userid}/mumbai`}> <img src={Mum}/></Link>
-    <Link to={`/salons/${userid}/Hyderabad`}> <img src={Hyd}/></Link>
-    <Link to={`/salons/${userid}/Chennai`}> <img src={Che}/></Link>
-    <Link to={`/salons/${userid}/Delhi`}> <img src={Del}/></Link>
+    <Link to={`/salons/${userid}/hyderabad`}> <img src={Hyd}/></Link>
+    <Link to={`/salons/${userid}/chennai`}> <img src={Che}/></Link>
+    <Link to={`/salons/${userid}/delhi`}> <img src={Del}/></Link>
     
     
  </div>

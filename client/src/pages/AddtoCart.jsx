@@ -9,7 +9,7 @@ import Header from '../componants/Header';
 import {  FaRegTrashAlt } from 'react-icons/fa';
 import PaymentForm from './Payment';
 import { Link } from 'react-router-dom';
-
+import Footer from '../componants/mainpage/Footer';
 const AddtoCart = () => {
   const { userid } = useParams();
   const [cart, setCart] = useState({ userId: '', products: [] });
@@ -177,8 +177,10 @@ const AddtoCart = () => {
       </Button>
     </div>
      </div>
+
     
     </div>
+    <Footer />
     </>
   );
 };

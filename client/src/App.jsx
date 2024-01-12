@@ -46,7 +46,7 @@ import ComplaintsButton from './pages/Comp1';
 import UserOrders from './pages/UserOrders';
 import SuccessPage from './pages/final';
 import DogBreeds from './pages/DogBreeds';
-import UserLogout from './pages/userLogout';
+// import UserLogout from './pages/userLogout';
 import Below699 from './pages/Below699';
 import Below999 from './pages/Below999';
 import Below1999 from './pages/Below1999';
@@ -65,7 +65,7 @@ const App = () => {
     <Routes>
     <Route path="/user/main" element={<MainUser />} />
       <Route path="/user/main/:userid" element={<MainUser />} />
-      <Route path="/dogbreeds" element={<DogBreeds />} />
+      <Route path="/dogbreeds/:userid" element={<DogBreeds />} />
       <Route path="/user/dashboard/:userid" element={<UserDashBoard />} />
       <Route path="/user/wishlist/:userid" element={<WishlistPage />} />
       <Route path="/user/cart/:userid" element={<AddtoCart />} />
@@ -114,7 +114,7 @@ const App = () => {
       <Route path="/edit/:title/:bc" element={<Editproduct/>} />
       <Route path="/addsalon" element={<AddSalon/>} />
       <Route path="/logout/:bc" element={<Logout/>} />
-      <Route path="/user/logout/:userid" element={<UserLogout/>} />
+    
      
       <Route path="/sell/products/:bc" element={<Seller_Products/>} />
       <Route path="/sell/account/:bc" element={<BrandDashBoard/>} />
